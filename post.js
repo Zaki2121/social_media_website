@@ -80,6 +80,7 @@ const addPostToLocalStorage = (postInfo) => {
     posts.push(post);
 
     localStorage.setItem("posts", JSON.stringify(posts));
+    LoadPostsFromLocalStorage();
 
 
 
@@ -96,7 +97,7 @@ document.addEventListener("click", (e) => {
             return;
         } else {
             addPostToLocalStorage([imageUrl, title, content]);
-            LoadPostsFromLocalStorage();
+            // LoadPostsFromLocalStorage();
         }
 
     }
