@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Website</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="UserForm">
+        <h1>Sing UP</h1>
+        <div class="form-control">
+          <label for="">FullName</label>
+          <input id="fullName" type="text" placeholder="enter your fullname" />
+          <small>Err</small>
+        </div>
+        <div class="form-control">
+          <label for="">email</label>
+          <input id="email" type="text" placeholder="enter your email" />
+          <small>Err</small>
+        </div>
+        <div class="form-control">
+          <label for="">password</label>
+          <input id="password" type="text" placeholder="enter your password" />
+          <small>Err</small>
+        </div>
+        <div class="form-control">
+          <label for="">ConfirmPassword</label>
+          <input
+            id="confirmPassword"
+            type="text"
+            placeholder="enter your password"
+          />
+          <small>Err</small>
+        </div>
+
+        <button class="btn" type="submit">Save</button>
+        <span class="text"
+          >I Have an Account <a href="./login.html">Sing In</a></span
+        >
+      </form>
+    </div>
+
+    <script src="./main.js"></script>
+    <script src="./functions.js"></script>
+  </body>
+</html>
