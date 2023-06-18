@@ -151,6 +151,12 @@ const addUserToLocalSTorage = (userinfo) => {
 
 
         localStorage.setItem("users", JSON.stringify(users));
+        alert("user added");
+
+        fullName.value = "";
+        email.value = "";
+        password.value = "";
+        confirmPassword.value = "";
 
     }
 
