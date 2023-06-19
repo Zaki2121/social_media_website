@@ -1,7 +1,9 @@
 let span = document.querySelector("#text");
 let currentUser = localStorage.getItem("currentUser");
 
-span.innerHTML = currentUser.substring(0, 5);
+let userName = currentUser.split(" ")[0];
+
+span.innerHTML = userName;
 
 
 let imageUrl = document.querySelector("#imageUrl");

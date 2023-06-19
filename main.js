@@ -161,6 +161,7 @@ const addUserToLocalSTorage = (userinfo) => {
         userinfo[1].classList.remove("success");
         userinfo[2].classList.remove("success");
         userinfo[3].classList.remove("success");
+        window.location.href = "./login.html";
 
 
     }
