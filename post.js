@@ -82,9 +82,9 @@ const addPostToLocalStorage = (postInfo) => {
 
     localStorage.setItem("posts", JSON.stringify(posts));
 
-    // postInfo[0].value = "";
-    // postInfo[1].value = "";
-    // postInfo[2].value = "";
+    postInfo[0].value = "";
+    postInfo[1].value = "";
+    postInfo[2].value = "";
     LoadPostsFromLocalStorage();
 
 
