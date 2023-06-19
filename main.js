@@ -79,7 +79,6 @@ const checkPasswordEquality = (data) => {
     }
 
 
-
 }
 
 const getUsersFromLocalStorage = () => {
@@ -151,12 +150,18 @@ const addUserToLocalSTorage = (userinfo) => {
 
 
         localStorage.setItem("users", JSON.stringify(users));
-        alert("user added");
+        userinfo[0].value = "";
+        userinfo[1].value = "";
+        userinfo[2].value = "";
+        userinfo[3].value = "";
 
-        fullName.value = "";
-        email.value = "";
-        password.value = "";
-        confirmPassword.value = "";
+
+        alert("successfully added user to a localstorage");
+        userinfo[0].classList.remove("success");
+        userinfo[1].classList.remove("success");
+        userinfo[2].classList.remove("success");
+        userinfo[3].classList.remove("success");
+
 
     }
 
