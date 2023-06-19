@@ -21,6 +21,7 @@ const getPostFromLocalStorage = () => {
 }
 
 const LoadPostsFromLocalStorage = () => {
+    
 
     let postList = getPostFromLocalStorage();
 
@@ -80,6 +81,10 @@ const addPostToLocalStorage = (postInfo) => {
     posts.push(post);
 
     localStorage.setItem("posts", JSON.stringify(posts));
+
+    postInfo[0].value = "";
+    postInfo[1].value = "";
+    postInfo[2].value = "";
     LoadPostsFromLocalStorage();
 
 
@@ -97,7 +102,8 @@ document.addEventListener("click", (e) => {
             return;
         } else {
             addPostToLocalStorage([imageUrl, title, content]);
-            // LoadPostsFromLocalStorage();
+            posts.innerHTML = "";
+            LoadPostsFromLocalStorage();
         }
 
     }

@@ -27,7 +27,7 @@ form {
 }
 
 input {
-  width: 500px;
+  width: 100%;
   padding: 10px 15px;
   border: 1px solid #ccc;
   outline: none;
@@ -38,7 +38,7 @@ small {
 }
 
 .btn {
-  width: 88%;
+  width: 100%;
   padding: 10px 15px;
   border-radius: 4px;
   border: 1px solid #ccc;
@@ -107,4 +107,17 @@ h1 {
 img {
   width: 600px;
   height: 400px;
+}
+
+@media screen and (max-width: 600px) {
+  form {
+    width: 400px;
+  }
+  img {
+    width: 300px;
+    height: 300px;
+  }
+  .posts {
+    grid-template-columns: 1fr;
+  }
 }
